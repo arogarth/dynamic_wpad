@@ -1,0 +1,4 @@
+
+
+RewriteEngine on
+RewriteRule wpad.dat wpad.php
