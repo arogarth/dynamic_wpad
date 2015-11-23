@@ -8,10 +8,6 @@ class Db {
 	private $db;
 	
 	public function __construct($host, $db, $user, $password) {
-		
-		var_dump($user);
-// 		$this->db = mysql_connect("localhost", $user, $password);
-// 		mysql_selectdb($db, $this->db);
 		$constr = "mysql:host={$host};dbname={$db}";
 		$this->db = new PDO($constr, $user, $password);
 	}

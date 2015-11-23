@@ -1,4 +1,5 @@
 <?php
+(include_once ('config.php')) or die("Missing config.php");
 include_once 'lib/database.php';
 
 $remoteIp = $_SERVER["REMOTE_ADDR"];
