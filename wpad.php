@@ -15,4 +15,5 @@ $queryLog = array(
 );
 $db->insertRow("query_logs", $queryLog);
 
+header("Content-Type: application/x-ns-proxy-autoconfig");
 echo $entry["content"];
